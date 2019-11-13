@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    list-style: none;
+    text-decoration: none;
+    font-family: sans-serif;
+
+}
+
+.mainbar{
+    width: 100%;
+    height: 100vh;
+    background: aliceblue;
+    background-image: url(./img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.nav{
+    width: 100%;
+    height: 15vh;
+    position: fixed;
+    z-index: 1;
+    background:rgba(0, 0, 0, .3);
+    
+}
+
+.nav>img{
+    margin-left: 8%;
+    margin-top: 2%;
+    cursor: pointer;
+}
+
+.nav>ul{
+    margin-left: 48%;
+    margin-top: -3%;
+}
+.nav>ul>li{
+    float: left;
+    color: white;
+    margin-left: 3%;
+    cursor: pointer;
+}
+.nav>ul>li:hover{
+    color: orangered;
+    transition-duration: .5s;
+}
+
+.btn1{
+    margin-left: 6%;
+    background: linear-gradient(to left, red,orange);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition-duration: 2s;
+    color: white;
+    margin-top: -2.5%;
+    
+}
+
+.btn1:hover{
+    background: linear-gradient(to right, red,orange);
+
+}
+
+.feature{
+    
+    height: 110vh;
+    
+}
+
+.ftext{
+    
+    text-align: center;
+    height: 30vh;
+    
+}
+
+.ftext>h2{
+    color: red;
+    font-size: 17px;
+    margin: 30px 0px;
+}
+
+.ftext>h1{
+    
+    font-size:40px;
+    margin: 20px 0px;
+    
+}
+
+.ftext>p{
+    color:#8a8a8a;
+    font-size:14px;   
+}
+.fblock{
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+    height: 80vh;
+    
+}
+.f{
+    margin-top: 50px;
+    width: 25%;
+    height: 30vh;
+    
+}
+
+.f>h1{
+    margin: 35px 0px;
+}
+
+.f>h1:hover{
+    color: #fa0347;
+    cursor: pointer;
+    transition-duration: 1s;
+    transform: translateX(10px);
+}
+
+.f>p{
+    font-size: 14px;
+    color:#8a8a8a;
+}
+
+
+.f> .icon{
+    background:rgba(0, 0, 0, .1);
+    width: 40px;
+    height: 40px;
+    padding: 10px 10px;
+    border-radius: 10px 10px 30px 10px;
+}
+.f> .icon>img{
+    width: 40px;
+    height: 40px;
+    background:red;
+    padding: 10px 10px;
+    color: white;
+    border-radius: 10px 10px 30px 10px;
+    
+}
+
+.f> .icon>img:hover{
+    color: #fa0347;
+    cursor: pointer;
+    transition-duration: 1s;
+    transform: translateX(10px);
+    
+}
+
+
+
+.cimg{
+    width: 25%;
+    height: 70vh;
+    
+}
+.cimg>img{
+    height: 70vh;
+    
+}
+
+.under-f{
+    display: flex;
+    justify-content: space-around;
+    height: 90vh;
+    
+
+}
+
+.uf img{
+    border-radius: 30px;
+    margin-top: 50px;
+    transform: scale(.8);
+    
+}
+
+.uf img:hover{
+    transform: scale(.9);
+    transition-duration: 3s;
+}
+
+.uf{
+    width: 40%;
+    height: 40vh;
+     
+}
+
+.uf>h1{
+    font-size: 40px;
+    margin: 20px 0px;
+    margin-top: 130px;
+    margin-left: 50px;
+}
+
+.uf>p{
+    margin-left: 50px;
+    color:#8a8a8a;
+}
+
+.uf> .btn2{
+    margin-left: 50px;
+    margin-top: 90px;
+    background: linear-gradient(to left, red,orange);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    font-weight: bolder;
+}
+
+.uf> .btn2:hover{
+    background: linear-gradient(to right, red,orange);  
+    
+}
+
+.course{
+    height: 110vh;
+    
+    
+}
+
+.ctext{
+    margin-top: 80px;
+    height: 30vh;
+    text-align: center;
+}
+
+.ctext>h2{
+    color: #fa0347;
+    font-size: 18px;
+    margin: 20px 0px;
+}
+
+.ctext>h1{
+    margin: 20px 0px;
+    font-size: 35px;
+}
+
+.images{
+    position: relative;
+    display: flex;
+}
+
+.images> .img{
+    position: relative;
+    width: 25%;
+    height: 75vh;
+    
+}
+
+.images> .img>img{
+    width: 100%;
+    height: 75vh;
+    background-size: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    background: rgba(0, 0, 0, .4);
+    top: 0%;
+    left: 0%;
+    bottom: 100%;
+    right: 100%;
+    overflow: hidden;
+    z-index: -1;
+    transition: .5s ease;
+
+}
+
+.overlay>h1{
+    
+    color: white;
+    text-align: center;
+    margin-top: 180px;
+}
+
+.overlay>p{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.overlay>button{
+    background: linear-gradient(to left,red, orange);
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    margin: 50px 0px;
+    margin-left: 140px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.img:hover .overlay{
+    z-index: 1;
+    transition: 1s ease;
+    top: 0;
+    left: 0%;
+    bottom: 0;
+    right: 0%;
+}
+
+
+
+.team{
+    background: white;
+    height: 140vh;
+    text-align: center;
+    padding-top: 200px;
+    box-sizing: border-box;
+}
+
+
+.team>h2{
+    color: #fa0347;
+    font-size: 18px;
+}
+
+.team>h1{
+    margin: 20px 0px;
+    font-size: 35px;
+}
+
+.team>p{
+    color:#8a8a8a;
+}
+
+.trainer{
+    display: flex;
+    flex-direction: row;
+    height: 60vh;
+    justify-content: space-around;
+}
+
+.trainer> .t{
+    position: relative;
+    height: 64vh;
+    margin-top: 50px;
+    background-size: 100% 100%;
+}
+
+.overlay1{
+    position: absolute;
+    background: rgba(0, 0, 0, .1);
+    top: 0;
+    bottom: 100%;
+    left: 0;
+    right: 100%;
+    overflow: hidden;
+    z-index: -1;
+    transition: .5s ease;
+
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    width: 15%;
+    height: 20vh;
+    background: black;
+    bottom: 0;
+    left: 85%;
+    right: 0%;
+    top: 30%;
+    transition: .3s ease;
+}
+.sidebar>i{
+    color: white;
+}
+
+.sidebar>i:hover{
+    cursor: pointer;
+    color: #fa0347;
+}
+
+.t:hover .overlay1{
+    z-index: 1;
+    transition: 1s ease;
+    top: 0;
+    left: 0%;
+    bottom: 0;
+    right: 0%;
+}
+
+.trainer> .t>h1{
+    margin: 20px 0px;
+}
+
+.trainer> .t>p{
+    color:#8a8a8a;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    height: 60vh;
+    background: #080A19;
+}
+
+.fo{
+    width: 20%;
+    height: 40vh;
+    background: transparent;
+    margin-top: 90px;
+}
+
+.fo>h1{
+    color: white;
+    margin: 20px 0px;
+}
+
+.footer> .fo>p{
+    color:#8a8a8a;
+    margin: 20px 0px;
+    line-height: 1.6;
+    
+}
+
+
+.footer> .fo>ul>li{
+    color:#8a8a8a;
+    margin: 10px 0px;
+    
+}
+
+.footer> .fo>ul>li:hover{
+    color: #fa0347;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+.fo>p>span{
+    color: white;
+}
+
+.fo>i{
+    color: white;
+    background: linear-gradient(to right, red,orange);  
+    padding: 12px 20px;
+    cursor: pointer;
+}
+
+.fo>input{
+    margin: 30px 0px;
+    padding: 10px 20px;
+}
+
+.last{
+    background: #080A19;
+    height: 10vh;
+    text-align: center;
+    border-top: 1px solid white;
+    padding-top: 20px;
+}
+
+.last>p{
+    color:#8a8a8a;
+}
+
+.last>p>span{
+    color: #fa0347;
+    cursor: pointer;
+}
